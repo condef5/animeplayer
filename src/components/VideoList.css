@@ -1,0 +1,26 @@
+.VideoView {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    /*border: 2px solid #253B6E;*/
+}
+
+.VideoOne {
+    width: 70%;
+}
+
+.VideoList {
+    width: 30%;
+    /*border-left: 2px solid #253B6E;*/
+    background-color: #fff;
+}
+
+.VideoListItem {
+    padding: 15px 30px 15px 15px;
+}
+
+.VideoListItem:nth-child(odd) {
+    background-color: #1F5F8B;
+    color: #fff;
+}
