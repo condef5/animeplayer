@@ -8,7 +8,7 @@ En este proyecto encontrará cómo implementar funciones / servicios importantes
 * Integracion de firebase and react
 * Implementación de webcomponents
 * Integracion con la API de youtube
-* Soporte para las diversar plataformas de video(youtube, vimeo, dalymotion, etc).
+* Soporte para las diversas plataformas de video(youtube, vimeo, dalymotion, etc).
 
 ## Demo
 
