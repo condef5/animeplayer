@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/animeplayer/static/js/runtime~main.9ccc7b67.js"
   },
   {
-    "revision": "3fe0e1d892a7b334e31f",
-    "url": "/animeplayer/static/js/main.3fe0e1d8.chunk.js"
+    "revision": "b38a6f3a6e4ce8cbff4a",
+    "url": "/animeplayer/static/js/main.b38a6f3a.chunk.js"
   },
   {
     "revision": "489d04cbdb0466ef3393",
     "url": "/animeplayer/static/js/1.489d04cb.chunk.js"
   },
   {
-    "revision": "3fe0e1d892a7b334e31f",
-    "url": "/animeplayer/static/css/main.3a19198b.chunk.css"
+    "revision": "b38a6f3a6e4ce8cbff4a",
+    "url": "/animeplayer/static/css/main.5467a856.chunk.css"
   },
   {
-    "revision": "46d44c86d6a6b117ea522d61a827e530",
+    "revision": "158d49c261bea95bc9546d37b3936348",
     "url": "/animeplayer/index.html"
   }
 ];
