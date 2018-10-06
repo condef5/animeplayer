@@ -1,17 +1,17 @@
 # AnimePlayer
 
-**Anime player** es una app para guardar links musicales sobre tus animes favoritos y reproducirlos en cualquier momento, está desarrollado con [ReactJs](https://facebook.github.io/react/) y [Firebase](https://firebase.google.com).
+**Anime player** is an app to save musical links on your favorite animes and play them at any time, it is developed with [ReactJs](https://facebook.github.io/react/) y [Firebase](https://firebase.google.com).
 
 ## Features
 
-En este proyecto encontraras cómo implementar funciones / servicios importantes como:
-* Integracion de firebase and react
-* Implementación de webcomponents
-* Integracion con la API de youtube
-* Soporte para las diversas plataformas de video(youtube, vimeo, dalymotion, etc).
+In this project you will find how to implement important functions / services such as:
+* Integration of firebase and react
+* Implementation of webcomponents
+* Integration with the YouTube API
+* Support for various video platforms (youtube, vimeo, dalymotion, etc).
 
 ## Demo
 
-Demo disponible [here](https://condef5.github.io/animeplayer).
+Demo available [here](https://condef5.github.io/animeplayer).
 
  
