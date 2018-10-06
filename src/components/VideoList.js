@@ -16,7 +16,7 @@ class VideoList extends React.Component {
         super(props)
         this.state = {
             list: [],
-            url: 'https://youtu.be/lPM6x_WDdoY'
+            url: 'https://youtu.be/A6Xqq_f3N24'
         }
     }
     componentDidMount = () => {
