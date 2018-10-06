@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import style from './Header.css'
+import './Header.css'
 import { addVideo } from './database'
 
 class Input extends Component {
 
     _onKeyPress(e) {
-        if (e.keyCode == 13) {
+        if (e.keyCode === 13) {
             this.getDataYoutube(this.getIdYoutube(this.url.value))
         }
     }
@@ -13,7 +13,8 @@ class Input extends Component {
         url = url.split(/(vi\/|v=|\/v\/|youtu\.be\/|\/embed\/)/);
         return (url[2] !== undefined) ? url[2].split(/[^0-9a-z_\-]/i)[0] : url[0];
     }
-     getTimeYoutube(time) {
+    
+    getTimeYoutube(time) {
         let time_extractor = /([0-9]*)M([0-9]*)S$/;
         let extracted = time_extractor.exec(time);
         let minutes = parseInt(extracted[1], 10); 
@@ -21,8 +22,9 @@ class Input extends Component {
         seconds = seconds > 10 ? seconds : '0' + seconds
         return `${minutes}m:${seconds}s`
     }
+    
     getDataYoutube(url) {
-        let urlApi = `https://www.googleapis.com/youtube/v3/videos?id=${url}&key=AIzaSyBSSUsN1Mnf1eFCF7W9tmnqPJ7HIFGQxCg%20&part=snippet,contentDetails`
+        let urlApi = `https://www.googleapis.com/youtube/v3/videos?id=${url}&key=AIzaSyClu0blTka0lH7eNUt_jkqXX2dudAP8xMw&part=snippet,contentDetails`
         fetch(urlApi)
             .then((response) => {
                 return response.json()
@@ -40,9 +42,8 @@ class Input extends Component {
     }
     render() {
         return (
-            <div className={style.group} >
+            <div className="group" >
                 <input
-                    className={style.input}
                     type="text"
                     placeholder="Ingrese una url"
                     onKeyDown={this._onKeyPress.bind(this)}

@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ReactPlayer from 'react-player'
-import style from './Video.css'
+import './Video.css'
   
 function Video({ url }) {
   return (
-    <div className={style.videoWrapper}> 
+    <div className="videoWrapper"> 
       <ReactPlayer url={url} controls={true} />
     </div>
   )

@@ -1,38 +1,34 @@
 import React from 'react'
 import Video from './Video'
-import style from './VideoList.css'
+import './VideoList.css'
 import { videoListRef } from './database'
-import ReactPlayer from 'react-player'
 
 function VideoOne({ url }) {
     return (
-        <div className={style.VideoOne} >
+        <div className="VideoOne" >
             <Video url={url} />
         </div>
     )
 }
+
 class VideoList extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             list: [],
-            url: 'https://vimeo.com/channels/181019/21245292'
+            url: 'https://youtu.be/lPM6x_WDdoY'
         }
-
-
-
     }
     componentDidMount = () => {
         videoListRef.on('value', snapshot => {
-            let listTemp = snapshot.val()
-            let hunterList = [], halo = [];
-            hunterList = Object.keys(listTemp).map(k => {
+            let listTemp = snapshot.val() || []
+            let halo = [];
+            Object.keys(listTemp).map(k => {
                 halo.push(listTemp[k])
             });
-            console.log()
             this.setState({ list: halo })
         })
-        fetch('https://www.googleapis.com/youtube/v3/videos?id=qQorV6J4Dz4&key=AIzaSyBSSUsN1Mnf1eFCF7W9tmnqPJ7HIFGQxCg%20&part=snippet,contentDetails,statistics,status')
+        fetch('https://www.googleapis.com/youtube/v3/videos?id=qQorV6J4Dz4&key=AIzaSyClu0blTka0lH7eNUt_jkqXX2dudAP8xMw&part=snippet,contentDetails,statistics,status')
             .then((response) => {
                 console.log(response)
             }).
@@ -47,9 +43,9 @@ class VideoList extends React.Component {
     render() {
         if (this.state.list.length > 0) {
             return (
-                <div className={style.VideoView}>
+                <div className="VideoView">
                     <VideoOne url={this.state.url} />
-                    <div className={style.VideoList}>
+                    <div className="VideoList">
                         {this.state.list.map((video, index) => {
                             return (
                                 <VideoListItem video={video} key={index} index={index + 1} onClick={this._onClick} />
@@ -61,15 +57,15 @@ class VideoList extends React.Component {
             )
 
         } else {
-            return <p className={style.VideoView}>Cargando ...</p>
+            return <p className="VideoView">Cargando ...</p>
         }
     }
 }
 function VideoListItem({ index, video, onClick }) {
-    var index = index < 10 ? `0${index}.` : `${index}.`
+    const _index = index < 10 ? `0${index}.` : `${index}.`
     return (
-        <div className={style.VideoListItem} onClick={onClick.bind(null, video.url)} > 
-            <h4>{index} {video.title} - {video.duration}</h4>
+        <div className="VideoListItem" onClick={onClick.bind(null, video.url)} > 
+            <h4>{_index} {video.title} - {video.duration}</h4>
         </div>
     )
 }

@@ -10,7 +10,7 @@ function Footer() {
     };
     return (
         <footer style={footerStyle}>
-            Desarrollado por drupvon
+            Make with <span role="img" aria-label="heart">❤️</span> for <a target="_blank" rel="noopener noreferrer" href="https://github.com/condef5/">condef5</a>
         </footer>
     )
 }
