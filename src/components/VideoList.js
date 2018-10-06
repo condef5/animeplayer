@@ -28,16 +28,10 @@ class VideoList extends React.Component {
             });
             this.setState({ list: halo })
         })
-        fetch('https://www.googleapis.com/youtube/v3/videos?id=qQorV6J4Dz4&key=AIzaSyClu0blTka0lH7eNUt_jkqXX2dudAP8xMw&part=snippet,contentDetails,statistics,status')
-            .then((response) => {
-                console.log(response)
-            }).
-            then((recurso) => { console.log(recurso) })
     }
     _onClick = (url, event) => {
         event.preventDefault();
         this.setState({ url })
-        console.log(url)
     }
 
     render() {
@@ -57,7 +51,7 @@ class VideoList extends React.Component {
             )
 
         } else {
-            return <p className="VideoView">Cargando ...</p>
+            return <p className="VideoView">Loading ...</p>
         }
     }
 }

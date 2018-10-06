@@ -34,7 +34,7 @@ class Input extends Component {
                     'url': this.url.value,
                     'title': data.items[0].snippet.title,
                     'duration': this.getTimeYoutube(data.items[0].contentDetails.duration),
-                    'img': data.items[0].snippet.thumbnails.default.url
+                    'img': data.items[0].snippet.thumbnails.high.url
                 }
                 addVideo(videoInfo)
                 this.url.value = ''
@@ -45,7 +45,7 @@ class Input extends Component {
             <div className="group" >
                 <input
                     type="text"
-                    placeholder="Ingrese una url"
+                    placeholder="Add url"
                     onKeyDown={this._onKeyPress.bind(this)}
                     ref={(url) => this.url = url}
                 />
