@@ -1,25 +1,27 @@
 .group {
     margin: 1em auto;
     max-width: 700px;
-    padding: 1em; 
+    padding: 1em;
 }
 
-.input {
-    -webkit-transition: border 0.3s;
-    border:2px solid #D2ECF9; 
+input {
+    border: none;
+    border-bottom: 2px solid rgba(245,98,98,.45);
+    box-shadow: 0 6px 12px rgba(0,0,0,.23), 0 10px 40px rgba(0,0,0,.19);
     border-radius: 2px;
     font-family: inherit;
     font-size: 20px;
     letter-spacing: 1px;
     padding: 12px;
-    transition: border 0.2s;
+    -webkit-transition: border .2s;
+    transition: border .2s;
     width: 100%;
 }
 
-.input:active,.input:focus {
-    border-bottom: 2px solid #1891AC;
+input:active, input:focus {
+    border-bottom: 2px solid #f56262;
 }
 
-.input:hover {
+input:hover {
     outline: none;
 }

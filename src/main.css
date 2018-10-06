@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
 body {
-  color: #799999;
+  background-color: #414141;
+  color: rgba(0,0,0,.59);
+  font-family: Roboto Mono,monospace;
   line-height: 1.25;
-  font-family: 'Roboto Mono', monospace;
-  background-color: #E8F1F5;
   margin: 0;
 }
 

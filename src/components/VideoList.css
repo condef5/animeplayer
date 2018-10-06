@@ -12,7 +12,9 @@
 
 .VideoList {
     width: 30%;
-    /*border-left: 2px solid #253B6E;*/
+    min-height: 320px;
+    max-height: 497px;
+    overflow: auto;
     background-color: #fff;
 }
 
