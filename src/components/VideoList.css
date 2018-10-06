@@ -22,6 +22,10 @@
     padding: 15px 30px 15px 15px;
 }
 
+.VideoListItem:hover {
+    cursor: pointer;
+}
+
 .VideoListItem:nth-child(odd) {
     background-color: #1F5F8B;
     color: #fff;

@@ -35,3 +35,14 @@ h1, h1, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }
+
+footer a {
+  color: #fff;
+  border: 1px solid transparent;
+  transition: all .3s;
+  padding-bottom: 1px;
+}
+
+footer a:hover {
+  border-bottom-color: #fff;
+}
