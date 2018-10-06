@@ -1,12 +1,14 @@
 import firebase from 'firebase';
-var config = {
-    apiKey: "AIzaSyBYn2F6_aDj52dh12m4lA6ae9cl5rsDxWA",
-    authDomain: "redux-firebase-demo-c5762.firebaseapp.com",
-    databaseURL: "https://redux-firebase-demo-c5762.firebaseio.com",
-    projectId: "redux-firebase-demo-c5762",
-    storageBucket: "redux-firebase-demo-c5762.appspot.com",
-    messagingSenderId: "224160438683"
+
+const config = {
+    apiKey: "AIzaSyBZg1nhaFA44rxrBwtf7AA03x8Idbp4mwQ",
+    authDomain: "animeplayer-9cccb.firebaseapp.com",
+    databaseURL: "https://animeplayer-9cccb.firebaseio.com",
+    projectId: "animeplayer-9cccb",
+    storageBucket: "animeplayer-9cccb.appspot.com",
+    messagingSenderId: "626099312109"
 };
+
 firebase.initializeApp(config);
 
 const database = firebase.database();
