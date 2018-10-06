@@ -15,6 +15,7 @@
     "eject": "react-scripts eject",
     "deploy": "npm run build && gh-pages -d build"
   },
+  "homepage" : "https://condef5.github.io/animeplayer",
   "eslintConfig": {
     "extends": "react-app"
   },
