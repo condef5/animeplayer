@@ -1,18 +1,9 @@
 import React from 'react';
+import './Footer.css'
 
 function Footer() {
-    const footerStyle = {
-        color: 'white',
-        background: 'var(--red)',
-        textAlign: 'center',
-        marginTop: '3em',
-        padding: '1em',
-        position: 'absolute',
-        bottom: 0,
-        width: '100vw'
-    };
     return (
-        <footer style={footerStyle}>
+        <footer className="Footer">
             Make with<span role="img" aria-label="heart">❤️</span> for <a target="_blank" rel="noopener noreferrer" href="https://github.com/condef5/">condef5</a>
         </footer>
     )

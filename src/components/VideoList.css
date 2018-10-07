@@ -33,3 +33,20 @@
     background-color: var(--arsenic);
     color: var(--white);
 }
+
+@media only screen and (max-width: 1200px) {
+    .VideoView {
+        display: block;
+        padding: 20px;
+    }
+
+    .VideoList, .VideoOne {
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .VideoList {
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+}
