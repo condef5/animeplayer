@@ -4,6 +4,8 @@
     padding-top: 25px;
     height: 0;
     overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .videoWrapper > div {

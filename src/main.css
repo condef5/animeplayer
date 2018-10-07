@@ -1,20 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding');
+
+/*
+  Main color palette
+*/
+:root {
+  --black: #000000;
+  --grey: #333333;
+  --greyLighter: #cccccc;
+  --red: #990033;
+  --bonbon: #cc9999;
+  --white: #ffffff;
+  --arsenic: #1e2730;
+  --finn: #644e5b;
+  --vinrouge: #9e5a63;
+  --contessa: #c96967;
+  --nepal: #97aabd;
+}
+
+
 body {
-  background-color: #414141;
-  color: rgba(0,0,0,.59);
-  font-family: Roboto Mono,monospace;
-  line-height: 1.25;
+  background-image: url(./assets/images/rising-sun.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+   background-color: var(--arsenic);
+  color: var(--white);
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-size: 16;
   margin: 0;
 }
 
 a {
-  color: rgba(0, 0, 0, 0.25);
+  color: var(--white);
   text-decoration: none;
   outline: none;
 }
 
 * {
   box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: var(--white);
 }
 
 *:focus {
@@ -37,12 +60,12 @@ h1, h1, h3, h4, h5, h6, p {
 }
 
 footer a {
-  color: #fff;
+  color: var(--white);
   border: 1px solid transparent;
   transition: all .3s;
   padding-bottom: 1px;
 }
 
 footer a:hover {
-  border-bottom-color: #fff;
+  border-bottom-color: var(--white);
 }

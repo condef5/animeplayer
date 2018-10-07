@@ -6,7 +6,7 @@
 
 input {
     border: none;
-    border-bottom: 2px solid rgba(245,98,98,.45);
+    border-bottom: 2px solid var(--red);
     box-shadow: 0 6px 12px rgba(0,0,0,.23), 0 10px 40px rgba(0,0,0,.19);
     border-radius: 2px;
     font-family: inherit;
@@ -19,7 +19,7 @@ input {
 }
 
 input:active, input:focus {
-    border-bottom: 2px solid #f56262;
+    border-bottom: 2px solid var(--bonbon);
 }
 
 input:hover {
