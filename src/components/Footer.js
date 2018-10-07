@@ -3,14 +3,17 @@ import React from 'react';
 function Footer() {
     const footerStyle = {
         color: 'white',
-        background: '#1891AC', 
+        background: 'var(--red)',
         textAlign: 'center',
         marginTop: '3em',
-        padding: '1em'
+        padding: '1em',
+        position: 'absolute',
+        bottom: 0,
+        width: '100vw'
     };
     return (
         <footer style={footerStyle}>
-            Make with <span role="img" aria-label="heart">❤️</span> for <a target="_blank" rel="noopener noreferrer" href="https://github.com/condef5/">condef5</a>
+            Make with<span role="img" aria-label="heart">❤️</span> for <a target="_blank" rel="noopener noreferrer" href="https://github.com/condef5/">condef5</a>
         </footer>
     )
 }
