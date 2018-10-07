@@ -41,11 +41,11 @@
     }
 
     .VideoList, .VideoOne {
-        border-radius: 10px;
         width: 100%;
     }
 
     .VideoList {
+        border-radius: 10px;
         margin-bottom: 50px;
         margin-top: 20px;
     }
