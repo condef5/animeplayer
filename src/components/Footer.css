@@ -1,0 +1,16 @@
+.Footer {
+    color: white;
+    background: var(--red);
+    text-align: center;
+    margin-top: 3em;
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+@media only screen and (max-width: 1200px) {
+    .Footer {
+        position: relative;
+    }
+}

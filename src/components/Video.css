@@ -15,3 +15,9 @@
     width: 100% !important;
     height: 100% !important;
 }
+
+@media only screen and (max-width: 1200px) {
+    .videoWrapper {
+        border-radius: 10px;
+    }
+}
