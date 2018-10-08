@@ -1,0 +1,19 @@
+.modal-bg {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color:rgba(0,0,0,0.3);
+	padding: 200px;
+}
+
+.modal-style {
+	background-color: #fff;
+	color: black;
+	border-radius: 5px;
+	max-width: 600px;
+	min-height: 400px;
+	margin: 0 auto;
+	padding: 30px;
+}
